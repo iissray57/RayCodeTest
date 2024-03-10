@@ -1,6 +1,5 @@
 ##[PCCP 기출문제] 1번 / 붕대 감기
 def solution(bandage, health, attacks):
-    answer = 0    
     maxHealth = health
     bandageTimer = 0
     attackCount = 0
@@ -23,11 +22,9 @@ def solution(bandage, health, attacks):
                 health = maxHealth
             
         if health <= 0 :
-            answer = -1
+            health = -1
             break
             
-        answer = health
         i += 1    
     
-    print(answer)
-    return answer
+    return health
